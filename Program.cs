@@ -7,12 +7,12 @@ namespace fizzbuzz
 {
     class Program
     {
-
-        static string FizzBuzz(int number) {
-            StringBuilder s = new StringBuilder();
-            if(number % 3 == 0) s.Append("Fizz");
-            if (number % 5 == 0) s.Append("Buzz");
-            return String.IsNullOrEmpty(s.ToString()) ? number.ToString() : s.ToString();
+        static string FizzBuzz(int num) 
+        {
+            StringBuilder sb = new StringBuilder();
+            if(num % 3 == 0) sb.Append("Fizz");
+            if(num % 5 == 0) sb.Append("Buzz");
+            return String.IsNullOrEmpty(sb.ToString()) ? num.ToString() : sb.ToString();
         }
 
         static void Main(string[] args)
